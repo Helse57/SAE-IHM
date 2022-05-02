@@ -1,0 +1,17 @@
+.filtre {
+  color: #000000;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.filtre div:nth-child(1n) {
+  min-height: 25px;
+  margin-top: 5px;
+  text-align: center;
+}
+.filtre div:nth-child(2n) {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  text-align: left;
+}

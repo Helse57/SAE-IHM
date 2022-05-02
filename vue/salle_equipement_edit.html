@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Edition d’un équipement d’une salle</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/vue/css/salle_equipement_edit.css"
+    />
+  </head>
+  <body>
+    <div class="pnltitre">Choisir un équipement dans la liste</div>
+    <div class="equipement_rubrique">
+      <div>
+        <select id="equipement_select" size="6"></select>
+        <span id="erreur_select" class="labelerreur"></span>
+      </div>
+    <div>
+        <label for=" equipement_edt_qte">quantité</label>
+        <span><input id="equipement_edt_qte" size="5" type="number" /></span>
+        <div><span id="erreur_qte" class="labelerreur"></span></div>
+        <div class="div_bouton">
+          <input id="equipement_btn_valider" type="button" />
+          <input id="equipement_btn_annuler" type="button" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- pour alimenter l'interface, il faut des données
+on insère les commandes d'insertions des scripts "connexion.js"
+, "data_equipement.js" pour afficher les informations d’un équipement -->
+  <script src="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/modele/data_equipement.js"></script>
+  <script src="https://devweb.iutmetz.univ-orraine.fr/~thieba218u/ihm/tp_inventaire/modele/connexion.js"></script>
+  <script src="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/controleur/salle_equipement_edit.js"></script>
+</html>

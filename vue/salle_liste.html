@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Liste des salles</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/vue/css/salle_liste.css"
+    />
+  </head>
+  <body>
+    <div class="pnltitre">Liste des salles</div>
+    <table id="salle_table" class="display compact hover">
+      <thead>
+        <tr>
+          <th>Numéro</th>
+          <th>Libellé</th>
+          <th>Etage</th>
+          <th></th>
+          <th>Département</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="pnlaction">
+      <input
+        id="salle_btn_detail"
+        type="button"
+        class="btninfo"
+        value="Détail"
+      />
+      <input id="salle_btn_ajouter" type="button" value="Ajouter" />
+      <input id="salle_btn_modifier" type="button" value="Modifier" />
+      <input
+        id="salle_btn_supprimer"
+        type="button"
+        class="btnalerte"
+        value="Supprimer"
+      />
+    </div>
+  </body>
+  <!-- pour alimenter l'interface, il faut des données
+on insère les commandes d'insertions des scripts "connexion.js"
+, "data_salle.js" pour alimenter la liste des salles
+et « data_equipement » pour supprimer les équipements d’une salle lors de la suppression d’une salle"
+IL faut d’abord importer les classes d’accès aux données de la base avant d’importer le script de connexion -->
+  <script src="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/modele/data_salle.js"></script>
+  <script src="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/modele/data_equipement.js"></script>
+  <script src="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/modele/connexion.js"></script>
+  <script src="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/controleur/salle_liste.js"></script>
+</html>

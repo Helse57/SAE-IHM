@@ -1,0 +1,29 @@
+.salle_rubrique div:nth-child(1n) {
+  /* chaque "div" enfant de classe style "rubrique" */
+  min-height: 30px;
+  margin-top: 5px;
+  text-align: left;
+  display: grid;
+}
+.salle_rubrique div:nth-child(1) {
+  /* 1er enfant "div" de classe style "rubrique" */
+  grid-template-columns: 1fr 9fr;
+}
+.salle_rubrique div:nth-child(2n),
+.salle_rubrique div:nth-child(3) {
+  /* les "div" enfants 2,4,6...,pair et 3 de classe style "rubrique" */
+  grid-template-columns: 1fr 1fr 8fr;
+  grid-gap: 10px;
+}
+.salle_sousrubrique {
+  min-height: 30px;
+  margin-top: 5px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 2px solid #808080;
+}
+.salle_commentaire {
+  font-size: 0.9em;
+  white-space: pre; /* séries de blancs et sauts de ligne \r\n conservés */
+}

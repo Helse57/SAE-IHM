@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Edition d'une salle</title>
+    <link type="text/css" rel="stylesheet" href="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/vue/css/salle_edit.css">
+</head>
+
+<body>
+    <div id="salle_titre" class="pnltitre"> Détail d'une salle</div>
+    <div id="salle_detail">
+        <div class="salle_rubrique">
+            <div>
+                <span class="labeltitre">IDENTIFICATION</span>
+                <span id="erreur_num" class="labelerreur"></span>
+            </div>
+            <div>
+                <label for="salle_edt_num">numéro</label>
+                <span><input id="salle_edt_num" placeholder="n° salle" size="5" type="text"></span>
+                <span><input id="salle_edt_lib" placeholder="libellé" size="30" type="text"> </span>
+            </div>
+            <div>
+                <label for="salle_edt_etage">étage</label>
+                <span><input id="salle_edt_etage" size="5" type="text"></span>
+                <span id="erreur_etage" class="labelerreur"></span>
+            </div>
+        </div>
+        <div class="salle_rubrique">
+            <div>
+                <span class="labeltitre">DEPARTEMENT</span><span id="erreur_dept" class="labelerreur"></span>
+            </div>
+            <div>
+                <label for="salle_edt_codedept">Code</label>
+                <span><input id="salle_edt_codedept" placeholder="code dépt" size="5" type="text"></span>
+                <span id="salle_departement" class="commentaire_salle"></span>
+            </div>
+        </div>
+        <div class="salle_rubrique">
+            <div>
+                <span class="labeltitre">EQUIPEMENTS</span>
+                <span id="erreur_equipt" class="labelerreur"></span>
+            </div>
+        </div>
+        <div class="salle_sousrubrique">
+            <div id="salle_equipement"></div>
+            <div id="salle_equipement_edit"></div>
+        </div>
+        <div class="pnlaction">
+            <input id="salle_btn_retour" class="btninfo" value="Retour" type="button">
+            <input id="salle_btn_valider" value="Valider" type="button">
+            <input id="salle_btn_annuler" class="btnalerte" value="Annuler" type="button">
+        </div>
+    </div>
+    </div>
+</body>
+<!-- pour alimenter l'interface, il faut des données
+    on insère les commandes d'insertions des scripts "connexion.js"
+    , "data_salle.js" pour afficher les informations de la salle
+    et « data_departement » pour afficher les informations du département de la salle" -->
+<script src="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/modele/data_salle.js"></script>
+<script src="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/modele/data_departement.js"></script>
+<script src="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/modele/connexion.js"></script>
+<script src="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/controleur/salle_edit.js"></script>
+
+</html>

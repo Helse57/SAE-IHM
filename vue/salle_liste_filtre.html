@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Filtre sélection salle</title>
+    <link type="text/css" rel="stylesheet" href="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/vue/css/salle_liste_filtre.css">
+</head>
+
+<body>
+    <div id="filtre_titre" class="pnltitre"> Sélection salle</div>
+    <div id="filtre_choix" class="pnldefaut">
+        <div id="filtre_tous" class='filtre'>
+            <div id="filtre_tous_btn" class='pnlbouton' name='bouton'> Toutes </div>
+            <div id="filtre_tous_edit"> </div>
+        </div>
+        <div id="filtre_etage" class='filtre'>
+            <div id="filtre_etage_btn" class='pnlbouton' name='bouton'>Etage</div>
+            <div id="filtre_etage_edit">
+                <label>Numéro</label><span><input type='text' id="filtre_edt_etage" size='5'></span>
+            </div>
+        </div>
+        <div id="filtre_departement" class='filtre'>
+            <div id="filtre_departement_btn" class='pnlbouton' name='bouton'>Département</div>
+            <div id="filtre_departement_edit">
+                <label>Code</label> <span><input type='text' id="filtre_edt_codedept" size='5'></span>
+                <label>Nom</label> <span><input type='text' id="filtre_edt_nomdept" size='20'></span>
+            </div>
+        </div>
+    </div>
+    <div id="filtre_recherche" class='pnlbouton'>
+        <input id="btn_rechercher" type="button" value="Rechercher">
+    </div>
+</body>
+<script src="https://devweb.iutmetz.univ-lorraine.fr/~thieba218u/ihm/tp_inventaire/controleur/salle_liste_filtre.js"></script>
+
+</html>

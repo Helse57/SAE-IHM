@@ -1,0 +1,48 @@
+
+* {box-sizing: border-box;}
+.gabarit > * , .gabarit > * > * {
+  border-right 				: 1px solid #ffffff;
+  border-bottom 			: 1px solid #ffffff;
+  padding					: 1px;
+}
+
+.gabarit {
+  display 					: grid;
+  min-height				: 800px;
+  grid-template-rows		: auto auto 1fr auto;  
+}
+.gabarit_zonetravail{
+  display					: grid; 
+  grid-template-columns		: 50px auto;	
+}
+	
+/* zone filtrage et zone travail */
+main {
+  display : grid;
+  grid-template-areas :
+    "aside"
+	"article"
+}
+/* media d'affichage >= 600 alors affichage en 2 colonnes */
+@media (min-width: 600px) {
+  main {
+    grid-template-columns: auto 1fr;
+    grid-template-areas :
+    "aside article"
+  }
+}
+/* side bar */
+aside {
+  grid-area: aside;
+  width		: 300px;
+}
+article {
+  grid-area: article;
+}
+
+
+
+
+
+
+
